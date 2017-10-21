@@ -1,6 +1,6 @@
 import React  from 'react';
 import {Component}  from 'react';
-
+import {Link} from 'react-router-dom';
 
 class Composer extends Component {
   constructor(props) {
@@ -15,10 +15,12 @@ class Composer extends Component {
       { this.state.data.map(obj => {
           return <div>
             <img src={obj.url} width="30" height="30"/>
-            <div id="color"> {obj.name}</div>
+            <div id="color">{obj.name}</div>
           </div>
         })
       }
+          <br /><Link to="/addComposer"><button>Add Composer</button></Link>
+
       </div>
     );
   }

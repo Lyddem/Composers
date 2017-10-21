@@ -12,7 +12,7 @@ class AddComposer extends Component {
         <div id="CTA">
           Name <input type="text" /> <br /><br /><br />
           Image Url <input type="text" /> <p />
-          <button type="submit" >Submit</button>
+          <button type="submit">Submit</button>
         </div>
       </div>
     )
