@@ -12,15 +12,14 @@ class Composer extends Component {
   render () {
     return (
       <div>
-      { this.state.data.map(obj => {
-          return <div>
-            <img src={obj.url} width="30" height="30"/>
-            <div id="color">{obj.name}</div>
-          </div>
-        })
-      }
-          <br /><Link to="/addComposer"><button>Add Composer</button></Link>
-
+        { this.state.data.map(obj => {
+            return <div>
+              <img src={obj.url} width="30" height="30"/>
+              <div id="color">{obj.name}</div>
+            </div>
+          })
+        }
+        <br /><Link to="/addComposer"><button>Add Composer</button></Link>
       </div>
     );
   }

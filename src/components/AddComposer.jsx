@@ -7,10 +7,6 @@ class AddComposer extends Component {
     super(props)
   }
 
-  clicked() {
-    console.log('clicked!');
-  }
-
   render () {
     return (
       <div>
